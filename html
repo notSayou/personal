@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly app</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="title">
+        <h1>Front-End team</h1>
+        <div class="yellow"></div>
+        <button class="edit-button">Modifier</button>
+    </div>
+    <div class="container">
+        <div class="adding">
+            <button class="add-bubble"></button>
+            <p class="add">Ajouter des membres</p>
+        </div>
+        <div class="list-members"></div>
+    </div>
+    <div class="container2">
+        <div class="title flex">
+            <h1>Participants</h1>
+            <div class="yellow"></div>
+            <div class="bloc1">
+            <!--<p class="completed">La liste de participants est vide. Veuillez la compléter.</p>-->
+                <button class="shuffle-button">
+                    <img src="/img/shuffle.png" alt="Shuffle">
+                </button>
+                <div class="participant-container"></div>
+                <button class="delparticipants hideparticipants">x</button>
+            </div>
+        </div>
+        <div class="title2 flex">
+            <h1>Message</h1>
+            <div class="yellow"></div>
+            <div class="bloc2 border">
+                <div class="icons">
+                    <button id="copyButton" class="copy">
+                        <img src="/img/copypaste.png" alt="copie" id="copyButton" width="45px" height="45px">
+                    </button>
+                    <button class="flip">
+                        <img src="/img/flip.png" alt="flip" width="25px" height="25px">
+                    </button>
+                </div>
+                <img src="/img/header.png" alt="Image en-tête" class="headerimg">
+                <div class="bloc-text hide">
+                    <p class="bloc-text">Hello !!</p>
+                    <p class="bloc-text">Pour info, voici la liste de passage du <span id="currentDate"></span> :</p>
+                    <ul id="participantNames" class="bloc-text"></ul>
+                    <p class="bloc-text">Pour rappel :</p>
+                    <ul class="bloc-text">
+                        <li>L’agenda est très simple :</li>
+                        <li>Qu’avez-vous fait cette semaine ?</li>
+                        <li>Avez-vous rencontré des blocages ? Si oui comment les avez-vous résolu ? Avez-vous pu les résoudre ?</li>
+                        <li>Qu’avez-vous appris cette semaine ?</li>
+                    </ul>
+                    <p class="bloc-text">Si vous pouvez partager un lien que vous avez découvert dans la semaine c’est top.</p>
+                    <p class="bloc-text">Si vous n’êtes pas dispo, merci de me faire parvenir en MP vos détails !</p>
+                </div>
+            </div>                
+            </div>
+        </div>
+    </div>    
+    <div class="button-container">
+        <button class="generate" id="generateButton">Générer le message</button>
+    </div>
+</body>
+</html>
+<script src="./js/script-min.js"></script>
